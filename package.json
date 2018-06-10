@@ -14,7 +14,9 @@
   "author": "CrazyCarrot",
   "dependencies": {
     "cross-env": "^5.1.6",
-    "laravel-mix": "^2.1.11"
+    "jquery": "^3.3.1",
+    "laravel-mix": "^2.1.11",
+    "normalize.css": "^8.0.0"
   },
   "devDependencies": {
     "browser-sync": "^2.24.4",

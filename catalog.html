@@ -11,7 +11,7 @@
 <header class="header">
     <div class="container header-flex">
         <div class="header-left">
-            <a href="#" class="link-logo">
+            <a href="/" class="link-logo">
                 <img src="img/logo.png" alt="logo">
                 <p class="logo-text">BRAN<span class="pink">D</span></p>
             </a>
@@ -30,8 +30,8 @@
 <nav>
     <div class="container">
         <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Man</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/catalog.html">Man</a></li>
             <li><a href="#">Women</a></li>
             <li><a href="#">Kids</a></li>
             <li><a href="#">Accessories</a></li>
@@ -47,7 +47,7 @@
         </h1>
         <div class="bread-crumbs">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li> / <a href="#">Men</a></li>
                 <li> / <a href="#" class="active">New Arrivals</a></li>
             </ul>
@@ -58,7 +58,7 @@
     <div class="container">
         <div class="catalog-menu">
             <div class="catalog-menu-item active">
-                <button class="btn catalog-menu-expand">Category <i class="fas fa-caret-up"></i></button>
+                <button class="btn catalog-menu-expand">Category <i class="fas fa-caret-down"></i></button>
                 <ul>
                     <li><a href="#">Accessories</a></li>
                     <li><a href="#">Bags</a></li>
@@ -114,13 +114,69 @@
         </div>
         <div class="catalog-products">
             <div class="catalog-filters">
-
+                <div class="filters-parameters">
+                    <div class="filters-parameter trending">
+                        <h4>Trending now</h4>
+                        <div class="trends">
+                            <div class="row">
+                                <a href="#">Bohemian</a> |
+                                <a href="#">Floral</a> |
+                                <a href="#">Lace</a>
+                            </div>
+                            <div class="row">
+                                <a href="#">Floral</a> |
+                                <a href="#">Lace</a> |
+                                <a href="#">Bohemian</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filters-parameter size">
+                        <h4>Size</h4>
+                        <div class="size-checkbox">
+                            <label><input type="checkbox">XXS</label>
+                            <label><input type="checkbox">XS</label>
+                            <label><input type="checkbox">S</label>
+                            <label><input type="checkbox">M</label>
+                            <label><input type="checkbox">L</label>
+                            <label><input type="checkbox">XL</label>
+                            <label><input type="checkbox">XXL</label>
+                        </div>
+                    </div>
+                    <div class="filters-parameter price">
+                        <h4>pRICE</h4>
+                        <div class="slider-prices">
+                            <input type="range">
+                        </div>
+                        <div class="prices">
+                            <span>$52</span>
+                            <span>$400</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-sorting">
+                    <div class="sort sort-by">
+                        <label>Sort By</label>
+                        <select name="sort-by">
+                            <option value="Name">Name</option>
+                            <option value="Price">Price</option>
+                        </select>
+                    </div>
+                    <div class="sort show">
+                        <label>Show</label>
+                        <select name="show">
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="All">All</option>
+                        </select>
+                    </div>
+                </div>
             </div>
             <div class="product-flex">
                 <div class="product">
                     <a href="#" class="product-card">
                         <div class="add-to-card-block">
-                            <img src="img/products/product-1.jpg" alt="product" class="product-img">
+                            <img src="img/products/product-9.jpg" alt="product" class="product-img">
                             <button class="add-to-card-button btn">
                                 <img src="img/cart-white.svg" alt="cart">
                                 Add to Cart
@@ -133,7 +189,7 @@
                 <div class="product">
                     <a href="#" class="product-card">
                         <div class="add-to-card-block">
-                            <img src="img/products/product-2.jpg" alt="product" class="product-img">
+                            <img src="img/products/product-10.jpg" alt="product" class="product-img">
                             <button class="add-to-card-button btn">
                                 <img src="img/cart-white.svg" alt="cart">
                                 Add to Cart
@@ -159,7 +215,7 @@
                 <div class="product">
                     <a href="#" class="product-card">
                         <div class="add-to-card-block">
-                            <img src="img/products/product-4.jpg" alt="product" class="product-img">
+                            <img src="img/products/product-11.jpg" alt="product" class="product-img">
                             <button class="add-to-card-button btn">
                                 <img src="img/cart-white.svg" alt="cart">
                                 Add to Cart
@@ -172,7 +228,20 @@
                 <div class="product">
                     <a href="#" class="product-card">
                         <div class="add-to-card-block">
-                            <img src="img/products/product-5.jpg" alt="product" class="product-img">
+                            <img src="img/products/product-8.jpg" alt="product" class="product-img">
+                            <button class="add-to-card-button btn">
+                                <img src="img/cart-white.svg" alt="cart">
+                                Add to Cart
+                            </button>
+                        </div>
+                        <p class="titles">mango people t-shirt</p>
+                        <p class="pink price">$52.00</p>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#" class="product-card">
+                        <div class="add-to-card-block">
+                            <img src="img/products/product-12.jpg" alt="product" class="product-img">
                             <button class="add-to-card-button btn">
                                 <img src="img/cart-white.svg" alt="cart">
                                 Add to Cart
@@ -198,7 +267,7 @@
                 <div class="product">
                     <a href="#" class="product-card">
                         <div class="add-to-card-block">
-                            <img src="img/products/product-7.jpg" alt="product" class="product-img">
+                            <img src="img/products/product-13.jpg" alt="product" class="product-img">
                             <button class="add-to-card-button btn">
                                 <img src="img/cart-white.svg" alt="cart">
                                 Add to Cart
@@ -211,7 +280,7 @@
                 <div class="product">
                     <a href="#" class="product-card">
                         <div class="add-to-card-block">
-                            <img src="img/products/product-8.jpg" alt="product" class="product-img">
+                            <img src="img/products/product-14.jpg" alt="product" class="product-img">
                             <button class="add-to-card-button btn">
                                 <img src="img/cart-white.svg" alt="cart">
                                 Add to Cart
@@ -222,6 +291,71 @@
                     </a>
                 </div>
             </div>
+            <div class="catalog-pagination">
+                <div class="pagination">
+                    <ul>
+                        <li><a href="#"><i class="fas fa-angle-left"></i></a></li>
+                        <li><a href="#" class="active">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="" class="disabled">...</a></li>
+                        <li><a href="#">20</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i></a></li>
+                    </ul>
+                </div>
+                <button class="btn pink-button">View All</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="banner catalog-banner">
+    <div class="container">
+        <div class="bannerContent">
+            <div class="discounts">
+                <div class="discountBlock">
+                    <div class="iconDiscount">
+                        <img src="img/forma1.svg" alt="delivery">
+                    </div>
+                    <div class="discount">
+                        <h3>Free Delivery</h3>
+                        <p>
+                            Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
+                            models.
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="discountBlock">
+                    <div class="iconDiscount">
+                        <img src="img/forma2.svg" alt="sale">
+                    </div>
+                    <div class="discount">
+                        <h3>Sales & discounts</h3>
+                        <p>
+                            Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
+                            models.
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="discountBlock">
+                    <div class="iconDiscount">
+                        <img src="img/forma3.svg" alt="assurance">
+                    </div>
+                    <div class="discount">
+                        <h3>Quality assurance</h3>
+                        <p>
+                            Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
+                            models.
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
         </div>
     </div>
 </section>
@@ -269,7 +403,7 @@
 <div class="footer-menu">
     <div class="container">
         <div class="about">
-            <a href="#" class="link-logo">
+            <a href="/" class="link-logo">
                 <img src="img/logo.png" alt="logo">
                 <p class="logo-text">BRAN<span class="pink">D</span></p>
             </a>

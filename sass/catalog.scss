@@ -1,0 +1,280 @@
+.catalog-header {
+  height: 148px;
+  background-color: #f8f3f4;
+
+  .container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  .pink {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+  }
+}
+
+.catalog {
+  margin-top: 60px;
+
+  .product {
+    width: 33.33%;
+  }
+
+  .container {
+    display: flex;
+  }
+}
+
+.catalog-menu {
+  width: 240px;
+  margin-right: 50px;
+}
+
+.catalog-products {
+  width: calc(100% - 290px);
+
+  .catalog-pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 110px;
+    margin-top: 45px;
+
+    .pagination ul {
+      display: flex;
+      border: 1px solid #ebebeb;
+      border-radius: 3px;
+
+      li {
+        list-style-type: none;
+
+        a {
+          display: block;
+          padding: 12px 8px;
+          color: #c4c4c4;
+          font-size: 16px;
+          font-weight: bold;
+          text-decoration: none;
+
+          &.active, &:hover {
+            color: $primary;
+          }
+
+          &.disabled {
+            color: #c4c4c4!important;
+          }
+        }
+      }
+    }
+
+    .btn {
+      width: 150px;
+      border-radius: 3px;
+      padding: 12px;
+    }
+  }
+}
+
+.catalog-menu-item {
+  margin-bottom: 20px;
+
+  a {
+    text-decoration: none;
+    color: #6f6e6e;
+  }
+
+  li {
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 33px;
+  }
+
+  ul {
+    display: none;
+    margin: 11px 10px 40px;
+  }
+
+  &.active{
+    .catalog-menu-expand {
+      color: $primary;
+
+      i {
+        transform: rotate(180deg);
+      }
+    }
+
+    ul {
+      display: block;
+    }
+  }
+}
+
+.catalog-menu-expand {
+  border-left: 5px solid $primary;
+  border-bottom: 1px solid #ebebeb;
+  padding: 12px 11px 15px;
+  width: 100%;
+  font-size: 14px;
+  color: #6f6e6e;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  outline: none;
+  transition: .3s all;
+
+  i {
+    margin-left: auto;
+    transition: .3s all;
+  }
+}
+
+.catalog-filters {
+  height: 225px;
+
+  .filters-parameters {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  .slider-prices input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .prices {
+    color: #6f6e6e;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .size-checkbox {
+    display: flex;
+    flex-flow: row wrap;
+
+    label {
+      width: 25%;
+      display: block;
+      color: #6f6e6e;
+      font-size: 14px;
+      line-height: 20px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+
+      input {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .filters-parameter {
+    width: 33.33%;
+
+    h4{
+      color: #6f6e6e;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+
+    .trends {
+      color: #dfdfdf;
+      font-size: 14px;
+      line-height: 26px;
+      padding-right: 115px;
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      a {
+        color: #6f6e6e;
+        text-decoration: none;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  .filter-sorting {
+    background-color: #f3f3f3;
+    padding: 10px;
+    display: flex;
+
+    .sort {
+      display: flex;
+
+      label, select {
+        display: block;
+        background-color: #ffffff;
+        border: 1px solid #ebebeb;
+        color: #6f6e6e;
+        font-size: 14px;
+        padding: 6px 8px 6px 13px;
+        box-sizing: border-box;
+      }
+
+      select {
+        padding: 4px 8px 5px 11px;
+        border-left: 0;
+      }
+
+      &.show {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.catalog-banner {
+  background-color: #222224;
+  height: 340px;
+  margin: 0;
+
+  .container {
+    height: 100%;
+    margin-top: 0;
+    align-items: center;
+    display: flex;
+  }
+
+  .discounts {
+    width: 100%;
+    float: none;
+    display: flex;
+
+    .iconDiscount {
+      width: 100%;
+      float: none;
+      height: 40px;
+    }
+
+    .discountBlock {
+      width: 33.33%;
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .discount {
+      width: 100%;
+      float: none;
+
+      h3 {
+        margin-top: 30px;
+      }
+
+      p {
+        margin-right: 0;
+        padding: 0 35px;
+      }
+    }
+  }
+}
