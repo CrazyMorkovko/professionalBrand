@@ -35,15 +35,12 @@ $primary: #f16d7f;
 }
 .icon-forma1:before {
   content: "\e901";
-  color: #000;
 }
 .icon-forma2:before {
   content: "\e902";
-  color: #000;
 }
 .icon-forma3:before {
   content: "\e903";
-  color: #000;
 }
 
 * {
@@ -108,7 +105,7 @@ body {
 
 .header-cart {
   display: inline-block;
-  top: 13px;
+  top: 12px;
   position: relative;
   right: 26px;
   text-decoration: none;
@@ -385,6 +382,11 @@ body {
 
     .add-to-card-button {
       display: flex;
+
+      .icon {
+        font-size: 22px;
+        margin-right: 10px;
+      }
     }
   }
 }
@@ -464,6 +466,24 @@ body {
   float: left;
   width: 112px;
   text-align: center;
+
+  .icon {
+    color: $primary;
+    display: block;
+    margin-top: -8px;
+  }
+
+  .icon-forma1 {
+    font-size: 32px;
+  }
+
+  .icon-forma2 {
+    font-size: 40px;
+  }
+
+  .icon-forma3 {
+    font-size: 35px;
+  }
 }
 
 .discount {
@@ -737,3 +757,4 @@ body {
 
 @import "catalog";
 @import "product-page";
+@import "checkout";
