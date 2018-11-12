@@ -9,5 +9,5 @@ mix.browserSync({
         '*.html']
 });
 
-mix.js('js/app.js', 'scripts')
+mix.react('js/app.js', 'scripts')
     .sass('sass/app.scss', 'css');
