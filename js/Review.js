@@ -19,16 +19,16 @@ export default class Review extends React.Component {
     if (this.props.review.moderated) {
       return '';
     }
-    return <button onClick={this.handleModerate.bind(this)}>Moderate</button>;
+    return <button  className="pink-button" onClick={this.handleModerate.bind(this)}>Moderate</button>;
   }
 
   render() {
-    return <div className="review">
+    return <div className="review-page__review">
       <h4>{this.props.review.reviewer}</h4>
       <p>{this.props.review.text}</p>
       <div className="btn">
         {this.renderModerateButton()}
-        <button onClick={this.handleDelete.bind(this)}>Delete</button>
+        <button  className="pink-button" onClick={this.handleDelete.bind(this)}>Delete</button>
       </div>
     </div>
   }

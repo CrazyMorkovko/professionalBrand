@@ -37,12 +37,15 @@ export default class CreateReview extends React.Component {
     return <div className="create-review">
       <form onSubmit={this.handleSubmit.bind(this)}>
         <div className="form-input">
-          <input type="text" value={this.state.form.reviewer} onChange={this.handleReviewerInput.bind(this)}/>
+          <input type="text"
+                 value={this.state.form.reviewer}
+                 placeholder="Name"
+                 onChange={this.handleReviewerInput.bind(this)}/>
         </div>
         <div className="form-input">
-          <textarea value={this.state.form.text} onChange={this.handleTextInput.bind(this)}/>
+          <textarea value={this.state.form.text} placeholder="Review text" onChange={this.handleTextInput.bind(this)}/>
         </div>
-        <button>Add</button>
+        <button className="pink-button">Add</button>
       </form>
     </div>
   }

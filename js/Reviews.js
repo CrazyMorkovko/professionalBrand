@@ -12,16 +12,16 @@ export default class Reviews extends React.Component {
           reviewer: 'Regina',
           id: 1,
           moderated: false,
-          text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aspernatur delectus,' +
-            'earum eius eos est facere, ipsum iste maxime necessitatibus officiis optio perferendis praesentium, quasi' +
-            'quia quo reiciendis sint.'
+          text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aspernatur ' +
+            'delectus, earum eius eos est facere, ipsum iste maxime necessitatibus officiis optio perferendis ' +
+            'praesentium, quasi quia quo reiciendis sint.'
         },
         {
           reviewer: 'Vadim',
           id: 2,
           moderated: true,
-          text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aspernatur delectus,' +
-            'earum eius eos est facere.'
+          text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aspernatur ' +
+            'delectus, earum eius eos est facere.'
         },
         {
           reviewer: 'Andrey',
