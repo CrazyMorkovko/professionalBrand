@@ -9,7 +9,7 @@ export default class Reviews extends React.Component {
       lastId: 3,
       reviews: [
         {
-          reviewer: 'Carrot',
+          reviewer: 'Regina',
           id: 1,
           moderated: false,
           text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aspernatur delectus,' +
@@ -17,14 +17,14 @@ export default class Reviews extends React.Component {
             'quia quo reiciendis sint.'
         },
         {
-          reviewer: 'Zayo',
+          reviewer: 'Vadim',
           id: 2,
           moderated: true,
           text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aspernatur delectus,' +
             'earum eius eos est facere.'
         },
         {
-          reviewer: 'Chinchy',
+          reviewer: 'Andrey',
           id: 3,
           moderated: true,
           text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aspernatur ' +
