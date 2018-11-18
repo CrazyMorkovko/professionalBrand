@@ -6,13 +6,26 @@ export default class Review extends React.Component {
   }
 
   handleDelete() {
-    this.props.onDeleteReview(this.props.review);
+    let review = this.props.review;
+    $.get('/api/responses/removeReview.json', {id_comment: review.id}, response => {
+      if (response.result === 1) {
+        this.props.onDeleteReview(review);
+      } else {
+        alert(response.error_message);
+      }
+    });
   }
 
   handleModerate() {
     let review = this.props.review;
-    review.moderated = true;
-    this.props.onUpdateReview(review);
+    $.get('/api/responses/approveReview.json', {id_comment: review.id}, response => {
+      if (response.result === 1) {
+        review.moderated = true;
+        this.props.onUpdateReview(review);
+      } else {
+        alert(response.error_message);
+      }
+    });
   }
 
   renderModerateButton() {
