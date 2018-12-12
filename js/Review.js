@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 
 export default class Review extends React.Component {
   constructor(props) {
@@ -7,29 +8,29 @@ export default class Review extends React.Component {
 
   handleDelete() {
     let review = this.props.review;
-    $.get('/api/responses/removeReview.json', {id_comment: review.id}, response => {
-      if (response.result === 1) {
+    axios.delete('api/reviews.php?id=' + review.id).then(response => {
+      if (response.data.result === 1) {
         this.props.onDeleteReview(review);
       } else {
-        alert(response.error_message);
+        alert(response.data.error_message);
       }
     });
   }
 
   handleModerate() {
     let review = this.props.review;
-    $.get('/api/responses/approveReview.json', {id_comment: review.id}, response => {
-      if (response.result === 1) {
-        review.moderated = true;
+    axios.post('api/reviews.php?id=' + review.id).then(response => {
+      if (response.data.result === 1) {
+        review.state = 1;
         this.props.onUpdateReview(review);
       } else {
-        alert(response.error_message);
+        alert(response.data.error_message);
       }
     });
   }
 
   renderModerateButton() {
-    if (this.props.review.moderated) {
+    if (this.props.review.state == 1) {
       return '';
     }
     return <button  className="pink-button" onClick={this.handleModerate.bind(this)}>Moderate</button>;
@@ -37,8 +38,8 @@ export default class Review extends React.Component {
 
   render() {
     return <div className="review-page__review">
-      <h4>{this.props.review.reviewer}</h4>
-      <p>{this.props.review.text}</p>
+      <h4>{this.props.review.name}</h4>
+      <p>{this.props.review.review}</p>
       <div className="btn">
         {this.renderModerateButton()}
         <button  className="pink-button" onClick={this.handleDelete.bind(this)}>Delete</button>

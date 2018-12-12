@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import Review from './Review';
 import CreateReview from './CreateReview';
 
@@ -6,31 +7,28 @@ export default class Reviews extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      lastId: 3,
       reviews: []
     };
     this.loadReviews();
   }
 
   loadReviews() {
-    $.get('/api/responses/reviewList.json', response => {
+    axios.get('/api/reviews.php').then(response => {
       this.setState({
-        reviews: response
+        reviews: response.data
       })
     })
   }
 
   saveReview(review) {
     // Браузер не позволяет делать post-запросы к статическим файлам.
-    $.get('/api/responses/addReview.json', review, response => {
-      if (response.result === 1) {
-        alert(response.userMessage);
+    axios.put('/api/reviews.php', review).then(response => {
+      if (response.data.result === true) {
+        alert(response.data.user_message);
         let reviews = this.state.reviews;
-        review.id = this.state.lastId + 1;
-        reviews.push(review);
+        reviews.push(response.data.review);
         this.setState({
-          reviews: reviews,
-          lastId: this.state.lastId + 1
+          reviews: reviews
         });
       }
     });
@@ -62,7 +60,7 @@ export default class Reviews extends React.Component {
       <div className="review-page">
         {this.state.reviews.map(review =>
           <Review
-            key={review.reviewer}
+            key={review.id}
             review={review}
             onDeleteReview={this.deleteReview.bind(this)}
             onUpdateReview={this.updateReview.bind(this)}/>

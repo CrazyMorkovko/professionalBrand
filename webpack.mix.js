@@ -1,8 +1,7 @@
 let mix = require('laravel-mix');
 
 mix.browserSync({
-    proxy: false,
-    server: true,
+    proxy: 'http://127.0.0.1:8080',
     files: [
         'scripts/app.js',
         'css/app.css',

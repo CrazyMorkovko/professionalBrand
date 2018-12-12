@@ -5,62 +5,62 @@ export default class CreateReview extends React.Component {
     super(props);
     this.state = {
       form: {
-        reviewer: '',
-        text: ''
+        name: '',
+        review: ''
       },
       errors: {
-        reviewer: '',
-        text: '',
+        name: '',
+        review: '',
         submit: ''
       }
     }
   }
 
-  handleReviewerInput(evt) {
+  handleNameInput(evt) {
     let form = this.state.form;
-    form.reviewer = evt.target.value;
+    form.name = evt.target.value;
     this.setState({form: form});
   }
 
-  handleTextInput(evt) {
+  handleReviewInput(evt) {
     let form = this.state.form;
-    form.text = evt.target.value;
+    form.review = evt.target.value;
     this.setState({form: form});
   }
 
-  validateReviewer() {
+  validateName() {
     let errors = this.state.errors;
-    if (!(/^[A-Za-zА-Яа-яЁё]+$/.test(this.state.form.reviewer))) {
-      errors.reviewer = 'Имя должно содержать только буквы!';
+    if (!(/^[A-Za-zА-Яа-яЁё]+$/.test(this.state.form.name))) {
+      errors.name = 'Имя должно содержать только буквы!';
     } else {
-      errors.reviewer = '';
+      errors.name = '';
     }
     this.setState({errors: errors});
-    return !errors.reviewer;
+    return !errors.name;
   }
 
-  validateText() {
+  validateReview() {
     let errors = this.state.errors;
-    if (!(/.+/.test(this.state.form.text))) {
-      errors.text = 'Введите текст!';
+    if (!(/.+/.test(this.state.form.review))) {
+      errors.review = 'Введите текст!';
     } else {
-      errors.text = '';
+      errors.review = '';
     }
     this.setState({errors: errors});
-    return !errors.text;
+    return !errors.review;
   }
 
   handleSubmit(evt) {
     evt.preventDefault();
-    let isValideReviewer = this.validateReviewer();
-    let isValideText = this.validateText();
-    if (!isValideReviewer || !isValideText) {
+    let isValideName = this.validateName();
+    let isValideReview = this.validateReview();
+    if (!isValideName || !isValideReview) {
       return;
     }
     this.props.onSaveReview(this.state.form);
     let form = {
-      reviewer: '',
-      text: ''
+      name: '',
+      review: ''
     };
     this.setState({form: form});
   }
@@ -77,14 +77,14 @@ export default class CreateReview extends React.Component {
       <form onSubmit={this.handleSubmit.bind(this)}>
         <div className="form-input">
           <input type="text"
-                 value={this.state.form.reviewer}
+                 value={this.state.form.name}
                  placeholder="Name"
-                 onChange={this.handleReviewerInput.bind(this)}/>
-          {this.renderError('reviewer')}
+                 onChange={this.handleNameInput.bind(this)}/>
+          {this.renderError('name')}
         </div>
         <div className="form-input">
-          <textarea value={this.state.form.text} placeholder="Review text" onChange={this.handleTextInput.bind(this)}/>
-          {this.renderError('text')}
+          <textarea value={this.state.form.review} placeholder="Review text" onChange={this.handleReviewInput.bind(this)}/>
+          {this.renderError('review')}
         </div>
         <button className="pink-button">Add</button>
       </form>

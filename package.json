@@ -13,6 +13,7 @@
   },
   "author": "CrazyCarrot",
   "dependencies": {
+    "axios": "^0.18.0",
     "cross-env": "^5.1.6",
     "jquery": "^3.3.1",
     "laravel-mix": "^2.1.11",
