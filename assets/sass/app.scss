@@ -1,4 +1,4 @@
-@import "~normalize.css";
+@import "../../node_modules/normalize.css";
 
 $primary: #f16d7f;
 
@@ -234,6 +234,7 @@ body {
 
   .sale-big {
     margin-bottom: 20px;
+    background: url("/img/saleKids.jpg");
     background: url("/img/saleKids.jpg");
   }
 }

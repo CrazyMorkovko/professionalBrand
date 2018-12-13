@@ -1,65 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Brand</title>
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
-    <script src="scripts/app.js"></script>
-</head>
-<body>
-<header class="header">
-    <div class="container header-flex">
-        <div class="header-left">
-            <a href="/" class="link-logo">
-                <img src="img/logo.png" alt="logo">
-                <p class="logo-text">BRAN<span class="pink">D</span></p>
-            </a>
-            <a href="#" class="grey-button">Browse <i class="fas fa-caret-down"></i></a>
-            <form action="#" class="header-form">
-                <input type="text" placeholder="Search for Item..." class="input-search">
-                <button type="submit" class="btn btn-search"><i class="fas fa-search"></i></button>
-            </form>
-        </div>
-        <div class="header-right">
-            <div id="mini-cart" class="header-cart"></div>
-            <a href="#" class="pink-button">My Account <i class="fas fa-caret-down"></i></a>
-        </div>
-    </div>
-</header>
-<nav>
+<section class="review-container">
     <div class="container">
-        <ul class="menu">
-            <li><a href="/">Home</a></li>
-            <li><a href="/catalog.html">Man</a></li>
-            <li><a href="#">Women</a></li>
-            <li><a href="#">Kids</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Featured</a></li>
-            <li><a href="#">Hot Deals</a></li>
-            <li><a href="/reviews.html">Reviews</a></li>
-        </ul>
-    </div>
-</nav>
-<section class="catalog-header">
-    <div class="container">
-        <h1 class="pink">
-            Reviews
-        </h1>
-        <div class="bread-crumbs">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li> / <a href="#" class="active">Reviews</a></li>
-            </ul>
+        <div class="reviews">
+            <div class="review-blocks">
+                <div class="review-block">
+                    <div class="avatar">
+                        <img src="/img/review-avatar-1.jpg" alt="avatar">
+                    </div>
+                    <div class="review">
+                        <p class="review-text">
+                            “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a.
+                            Aliquam
+                            condimentum mattis neque sed pretium”
+                        </p>
+                        <div class="pink">
+                            Bin Burhan
+                        </div>
+                        <p class="review-geo">Dhaka, Bd</p>
+                        <div class="review-selector">
+                            <a href=""></a>
+                            <a href="" class="active"></a>
+                            <a href=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subscribe">
+            <div class="subscribe-items">
+                <h3>Subscribe</h3>
+                <h4>FOR OUR NEWLETTER AND PROMOTION</h4>
+                <form class="input-group">
+                    <input type="text" placeholder="Enter Your Email" class="subscribe-input" required>
+                    <div class="input-group-addon">
+                        <button class="pink-button">Subscribe</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </section>
-<div id="reviews"></div>
 <div class="footer-menu">
     <div class="container">
         <div class="about">
             <a href="/" class="link-logo">
-                <img src="img/logo.png" alt="logo">
+                <img src="/img/logo.png" alt="logo">
                 <p class="logo-text">BRAN<span class="pink">D</span></p>
             </a>
             <p>

@@ -2,7 +2,7 @@
 /vendor/
 composer.lock
 /node_modules/
-scripts/app.js
-css/app.css
+public/scripts/app.js
+public/css/app.css
 mix-manifest.json
 package-lock.json
