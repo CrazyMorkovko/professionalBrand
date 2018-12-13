@@ -4,13 +4,13 @@ include "header.template.php";
 <section class="catalog-header">
     <div class="container">
         <h1 class="pink">
-            New Arrivals
+            <?=$product['name']?>
         </h1>
         <div class="bread-crumbs">
             <ul>
                 <li><a href="/">Home</a></li>
-                <li> / <a href="#">Men</a></li>
-                <li> / <a href="#" class="active">New Arrivals</a></li>
+                <li> / <a href="/?page=catalog&id=<?=$product['category_id']?>"><?=$product['category_name']?></a></li>
+                <li> / <a href="#" class="active"><?=$product['name']?></a></li>
             </ul>
         </div>
     </div>
@@ -22,7 +22,7 @@ include "header.template.php";
     </div>
     <div class="container">
         <div class="slider-img">
-            <img src="/img/products/product-15.jpg" alt="product">
+            <img src="/uploads/products/product-15.jpg" alt="product">
         </div>
     </div>
 </div>
@@ -30,22 +30,20 @@ include "header.template.php";
     <div class="container">
         <div class="product-details-container">
             <h4 class="pink category-name">
-                WOMEN COLLECTION
+                <?=$product['category_name']?> COLLECTION
             </h4>
             <div class="divider"></div>
             <h4 class="product-name">
-                Moschino Cheap And Chic
+                <?=$product['name']?>
             </h4>
             <p>
-                Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate
-                collaborative architectures before cutting-edge services. Completely visualize parallel core competencies
-                rather than exceptional portals.
+                <?=$product['description']?>
             </p>
             <div class="product-attributes">
                 <div>MATERIAL: <span class="grey">COTTON</span></div>
                 <div>DESIGNER: <span class="grey">BINBURHAN</span></div>
             </div>
-            <h4 class="pink product-price">$561</h4>
+            <h4 class="pink product-price">$<?=$product['price']?></h4>
             <hr>
             <div class="choose-forms">
                 <div class="choose-form">
@@ -83,7 +81,7 @@ include "header.template.php";
             <div class="product">
                 <a href="#" class="product-card">
                     <div class="add-to-card-block">
-                        <img src="/img/products/product-19.jpg" alt="product" class="product-img">
+                        <img src="/uploads/products/product-19.jpg" alt="product" class="product-img">
                         <button class="add-to-card-button btn">
                             <i class="icon icon-cart"></i>
                             Add to Cart
@@ -96,7 +94,7 @@ include "header.template.php";
             <div class="product">
                 <a href="#" class="product-card">
                     <div class="add-to-card-block">
-                        <img src="/img/products/product-18.jpg" alt="product" class="product-img">
+                        <img src="/uploads/products/product-18.jpg" alt="product" class="product-img">
                         <button class="add-to-card-button btn">
                             <i class="icon icon-cart"></i>
                             Add to Cart
@@ -109,7 +107,7 @@ include "header.template.php";
             <div class="product">
                 <a href="#" class="product-card">
                     <div class="add-to-card-block">
-                        <img src="/img/products/product-17.jpg" alt="product" class="product-img">
+                        <img src="/uploads/products/product-17.jpg" alt="product" class="product-img">
                         <button class="add-to-card-button btn">
                             <i class="icon icon-cart"></i>
                             Add to Cart
@@ -122,7 +120,7 @@ include "header.template.php";
             <div class="product">
                 <a href="#" class="product-card">
                     <div class="add-to-card-block">
-                        <img src="/img/products/product-16.jpg" alt="product" class="product-img">
+                        <img src="/uploads/products/product-16.jpg" alt="product" class="product-img">
                         <button class="add-to-card-button btn">
                             <i class="icon icon-cart"></i>
                             Add to Cart

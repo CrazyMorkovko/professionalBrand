@@ -50,110 +50,21 @@ include "header.template.php";
 <section class="items">
     <div class="container">
         <div class="product-flex">
+            <?php foreach ($products as $product):?>
             <div class="product">
-                <a href="#" class="product-card">
+                <a href="/?page=product-page&id=<?=$product['id']?>" class="product-card">
                     <div class="add-to-card-block">
-                        <img src="/img/products/product-1.jpg" alt="product" class="product-img">
+                        <img src="/uploads/products/<?=$product['image']?>" alt="product" class="product-img">
                         <button class="add-to-card-button btn">
                             <i class="icon icon-cart"></i>
                             Add to Cart
                         </button>
                     </div>
-                    <p class="titles">mango people t-shirt</p>
-                    <p class="pink price">$52.00</p>
+                    <p class="titles"><?=$product['name']?></p>
+                    <p class="pink price">$<?=$product['price']?></p>
                 </a>
             </div>
-            <div class="product">
-                <a href="#" class="product-card">
-                    <div class="add-to-card-block">
-                        <img src="/img/products/product-2.jpg" alt="product" class="product-img">
-                        <button class="add-to-card-button btn">
-                            <i class="icon icon-cart"></i>
-                            Add to Cart
-                        </button>
-                    </div>
-                    <p class="titles">mango people t-shirt</p>
-                    <p class="pink price">$52.00</p>
-                </a>
-            </div>
-            <div class="product">
-                <a href="#" class="product-card">
-                    <div class="add-to-card-block">
-                        <img src="/img/products/product-3.jpg" alt="product" class="product-img">
-                        <button class="add-to-card-button btn">
-                            <i class="icon icon-cart"></i>
-                            Add to Cart
-                        </button>
-                    </div>
-                    <p class="titles">mango people t-shirt</p>
-                    <p class="pink price">$52.00</p>
-                </a>
-            </div>
-            <div class="product">
-                <a href="#" class="product-card">
-                    <div class="add-to-card-block">
-                        <img src="/img/products/product-4.jpg" alt="product" class="product-img">
-                        <button class="add-to-card-button btn">
-                            <i class="icon icon-cart"></i>
-                            Add to Cart
-                        </button>
-                    </div>
-                    <p class="titles">mango people t-shirt</p>
-                    <p class="pink price">$52.00</p>
-                </a>
-            </div>
-            <div class="product">
-                <a href="#" class="product-card">
-                    <div class="add-to-card-block">
-                        <img src="/img/products/product-5.jpg" alt="product" class="product-img">
-                        <button class="add-to-card-button btn">
-                            <i class="icon icon-cart"></i>
-                            Add to Cart
-                        </button>
-                    </div>
-                    <p class="titles">mango people t-shirt</p>
-                    <p class="pink price">$52.00</p>
-                </a>
-            </div>
-            <div class="product">
-                <a href="#" class="product-card">
-                    <div class="add-to-card-block">
-                        <img src="/img/products/product-6.jpg" alt="product" class="product-img">
-                        <button class="add-to-card-button btn">
-                            <i class="icon icon-cart"></i>
-                            Add to Cart
-                        </button>
-                    </div>
-                    <p class="titles">mango people t-shirt</p>
-                    <p class="pink price">$52.00</p>
-                </a>
-            </div>
-            <div class="product">
-                <a href="#" class="product-card">
-                    <div class="add-to-card-block">
-                        <img src="/img/products/product-7.jpg" alt="product" class="product-img">
-                        <button class="add-to-card-button btn">
-                            <i class="icon icon-cart"></i>
-                            Add to Cart
-                        </button>
-                    </div>
-                    <p class="titles">mango people t-shirt</p>
-                    <p class="pink price">$52.00</p>
-                </a>
-            </div>
-            <div class="product">
-                <a href="#" class="product-card">
-                    <div class="add-to-card-block">
-                        <img src="/img/products/product-8.jpg" alt="product" class="product-img">
-                        <button class="add-to-card-button btn">
-                            <i class="icon icon-cart"></i>
-                            Add to Cart
-                        </button>
-                    </div>
-                    <p class="titles">mango people t-shirt</p>
-                    <p class="pink price">$52.00</p>
-                </a>
-            </div>
+            <?php endforeach;?>
         </div>
     </div>
 </section>

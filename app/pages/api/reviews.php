@@ -1,9 +1,6 @@
 <?php
 header('Content-Type: application/json');
 
-require_once('./config.php');
-$connection = mysqli_connect($config['host'], $config['user'], $config['password'], $config['database']);
-
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $arr = [];
     $result = mysqli_query($connection, 'SELECT * FROM reviews WHERE product_id = 1');

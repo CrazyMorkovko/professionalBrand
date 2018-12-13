@@ -8,7 +8,7 @@ export default class Review extends React.Component {
 
   handleDelete() {
     let review = this.props.review;
-    axios.delete('api/reviews.php?id=' + review.id).then(response => {
+    axios.delete('/?page=api/reviews&id=' + review.id).then(response => {
       if (response.data.result === 1) {
         this.props.onDeleteReview(review);
       } else {
@@ -19,7 +19,7 @@ export default class Review extends React.Component {
 
   handleModerate() {
     let review = this.props.review;
-    axios.post('api/reviews.php?id=' + review.id).then(response => {
+    axios.post('/?page=api/reviews&id=' + review.id).then(response => {
       if (response.data.result === 1) {
         review.state = 1;
         this.props.onUpdateReview(review);

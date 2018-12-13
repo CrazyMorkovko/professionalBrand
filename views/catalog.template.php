@@ -135,7 +135,7 @@ include "header.template.php";
                 <div class="product">
                     <a href="#" class="product-card">
                         <div class="add-to-card-block">
-                            <img src="/img/products/product-9.jpg" alt="product" class="product-img">
+                            <img src="/uploads/products/product-9.jpg" alt="product" class="product-img">
                             <button class="add-to-card-button btn">
                                 <i class="icon icon-cart"></i>
 Add to Cart
@@ -148,7 +148,7 @@ Add to Cart
                 <div class="product">
                     <a href="#" class="product-card">
                         <div class="add-to-card-block">
-                            <img src="/img/products/product-10.jpg" alt="product" class="product-img">
+                            <img src="/uploads/products/product-10.jpg" alt="product" class="product-img">
                             <button class="add-to-card-button btn">
                                 <i class="icon icon-cart"></i>
 Add to Cart
@@ -161,7 +161,7 @@ Add to Cart
                 <div class="product">
                     <a href="#" class="product-card">
                         <div class="add-to-card-block">
-                            <img src="/img/products/product-3.jpg" alt="product" class="product-img">
+                            <img src="/uploads/products/product-3.jpg" alt="product" class="product-img">
                             <button class="add-to-card-button btn">
                                 <i class="icon icon-cart"></i>
 Add to Cart
@@ -174,7 +174,7 @@ Add to Cart
                 <div class="product">
                     <a href="#" class="product-card">
                         <div class="add-to-card-block">
-                            <img src="/img/products/product-11.jpg" alt="product" class="product-img">
+                            <img src="/uploads/products/product-11.jpg" alt="product" class="product-img">
                             <button class="add-to-card-button btn">
                                 <i class="icon icon-cart"></i>
 Add to Cart
@@ -187,7 +187,7 @@ Add to Cart
                 <div class="product">
                     <a href="#" class="product-card">
                         <div class="add-to-card-block">
-                            <img src="/img/products/product-8.jpg" alt="product" class="product-img">
+                            <img src="/uploads/products/product-8.jpg" alt="product" class="product-img">
                             <button class="add-to-card-button btn">
                                 <i class="icon icon-cart"></i>
 Add to Cart
@@ -200,7 +200,7 @@ Add to Cart
                 <div class="product">
                     <a href="#" class="product-card">
                         <div class="add-to-card-block">
-                            <img src="/img/products/product-12.jpg" alt="product" class="product-img">
+                            <img src="/uploads/products/product-12.jpg" alt="product" class="product-img">
                             <button class="add-to-card-button btn">
                                 <i class="icon icon-cart"></i>
 Add to Cart
@@ -213,7 +213,7 @@ Add to Cart
                 <div class="product">
                     <a href="#" class="product-card">
                         <div class="add-to-card-block">
-                            <img src="/img/products/product-6.jpg" alt="product" class="product-img">
+                            <img src="/uploads/products/product-6.jpg" alt="product" class="product-img">
                             <button class="add-to-card-button btn">
                                 <i class="icon icon-cart"></i>
 Add to Cart
@@ -226,7 +226,7 @@ Add to Cart
                 <div class="product">
                     <a href="#" class="product-card">
                         <div class="add-to-card-block">
-                            <img src="/img/products/product-13.jpg" alt="product" class="product-img">
+                            <img src="/uploads/products/product-13.jpg" alt="product" class="product-img">
                             <button class="add-to-card-button btn">
                                 <i class="icon icon-cart"></i>
 Add to Cart
@@ -239,7 +239,7 @@ Add to Cart
                 <div class="product">
                     <a href="#" class="product-card">
                         <div class="add-to-card-block">
-                            <img src="/img/products/product-14.jpg" alt="product" class="product-img">
+                            <img src="/uploads/products/product-14.jpg" alt="product" class="product-img">
                             <button class="add-to-card-button btn">
                                 <i class="icon icon-cart"></i>
 Add to Cart

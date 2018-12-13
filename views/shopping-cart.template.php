@@ -28,13 +28,13 @@ include "header.template.php";
             </ul>
         </div>
         <div class="add-product">
-            <img src="/img/products/product-9.jpg" alt="product">
+            <img src="/uploads/products/product-9.jpg" alt="product">
         </div>
         <div class="add-product">
-            <img src="/img/products/product-10.jpg" alt="product">
+            <img src="/uploads/products/product-10.jpg" alt="product">
         </div>
         <div class="add-product">
-            <img src="/img/products/product-13.jpg" alt="product">
+            <img src="/uploads/products/product-13.jpg" alt="product">
         </div>
         <div class="cart-btn">
             <button class="btn">cLEAR SHOPPING CART</button>

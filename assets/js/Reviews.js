@@ -13,7 +13,7 @@ export default class Reviews extends React.Component {
   }
 
   loadReviews() {
-    axios.get('/api/reviews.php').then(response => {
+    axios.get('/?page=api/reviews').then(response => {
       this.setState({
         reviews: response.data
       })
@@ -22,7 +22,7 @@ export default class Reviews extends React.Component {
 
   saveReview(review) {
     // Браузер не позволяет делать post-запросы к статическим файлам.
-    axios.put('/api/reviews.php', review).then(response => {
+    axios.put('/?page=api/reviews', review).then(response => {
       if (response.data.result === true) {
         alert(response.data.user_message);
         let reviews = this.state.reviews;
