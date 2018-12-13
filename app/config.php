@@ -1,7 +1,7 @@
 <?php
 $config = [
     'host' => 'localhost',
-    'user' => 'avengerweb',
-    'password' => '123456',
+    'user' => 'root',
+    'password' => '',
     'database' => 'professional_brand'
 ];
