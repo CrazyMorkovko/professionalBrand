@@ -138,8 +138,8 @@ include "header.template.php";
                             <img src="/uploads/products/product-9.jpg" alt="product" class="product-img">
                             <button class="add-to-card-button btn">
                                 <i class="icon icon-cart"></i>
-Add to Cart
-</button>
+                                Add to Cart
+                            </button>
                         </div>
                         <p class="titles">mango people t-shirt</p>
                         <p class="pink price">$52.00</p>
@@ -151,8 +151,8 @@ Add to Cart
                             <img src="/uploads/products/product-10.jpg" alt="product" class="product-img">
                             <button class="add-to-card-button btn">
                                 <i class="icon icon-cart"></i>
-Add to Cart
-</button>
+                                Add to Cart
+                            </button>
                         </div>
                         <p class="titles">mango people t-shirt</p>
                         <p class="pink price">$52.00</p>
@@ -164,8 +164,8 @@ Add to Cart
                             <img src="/uploads/products/product-3.jpg" alt="product" class="product-img">
                             <button class="add-to-card-button btn">
                                 <i class="icon icon-cart"></i>
-Add to Cart
-</button>
+                                Add to Cart
+                            </button>
                         </div>
                         <p class="titles">mango people t-shirt</p>
                         <p class="pink price">$52.00</p>
@@ -177,8 +177,8 @@ Add to Cart
                             <img src="/uploads/products/product-11.jpg" alt="product" class="product-img">
                             <button class="add-to-card-button btn">
                                 <i class="icon icon-cart"></i>
-Add to Cart
-</button>
+                                Add to Cart
+                            </button>
                         </div>
                         <p class="titles">mango people t-shirt</p>
                         <p class="pink price">$52.00</p>
@@ -190,8 +190,8 @@ Add to Cart
                             <img src="/uploads/products/product-8.jpg" alt="product" class="product-img">
                             <button class="add-to-card-button btn">
                                 <i class="icon icon-cart"></i>
-Add to Cart
-</button>
+                                Add to Cart
+                            </button>
                         </div>
                         <p class="titles">mango people t-shirt</p>
                         <p class="pink price">$52.00</p>
@@ -203,8 +203,8 @@ Add to Cart
                             <img src="/uploads/products/product-12.jpg" alt="product" class="product-img">
                             <button class="add-to-card-button btn">
                                 <i class="icon icon-cart"></i>
-Add to Cart
-</button>
+                                Add to Cart
+                            </button>
                         </div>
                         <p class="titles">mango people t-shirt</p>
                         <p class="pink price">$52.00</p>
@@ -216,8 +216,8 @@ Add to Cart
                             <img src="/uploads/products/product-6.jpg" alt="product" class="product-img">
                             <button class="add-to-card-button btn">
                                 <i class="icon icon-cart"></i>
-Add to Cart
-</button>
+                                Add to Cart
+                            </button>
                         </div>
                         <p class="titles">mango people t-shirt</p>
                         <p class="pink price">$52.00</p>
@@ -229,8 +229,8 @@ Add to Cart
                             <img src="/uploads/products/product-13.jpg" alt="product" class="product-img">
                             <button class="add-to-card-button btn">
                                 <i class="icon icon-cart"></i>
-Add to Cart
-</button>
+                                Add to Cart
+                            </button>
                         </div>
                         <p class="titles">mango people t-shirt</p>
                         <p class="pink price">$52.00</p>
@@ -242,8 +242,8 @@ Add to Cart
                             <img src="/uploads/products/product-14.jpg" alt="product" class="product-img">
                             <button class="add-to-card-button btn">
                                 <i class="icon icon-cart"></i>
-Add to Cart
-</button>
+                                Add to Cart
+                            </button>
                         </div>
                         <p class="titles">mango people t-shirt</p>
                         <p class="pink price">$52.00</p>
@@ -281,7 +281,7 @@ Add to Cart
                     <div class="discount">
                         <h3>Free Delivery</h3>
                         <p>
-Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
+                            Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
                             models.
                         </p>
                     </div>
@@ -294,7 +294,7 @@ Worldwide delivery on all. Authorit tively morph next-generation innov tion with
                     <div class="discount">
                         <h3>Sales & discounts</h3>
                         <p>
-Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
+                            Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
                             models.
                         </p>
                     </div>
@@ -307,7 +307,7 @@ Worldwide delivery on all. Authorit tively morph next-generation innov tion with
                     <div class="discount">
                         <h3>Quality assurance</h3>
                         <p>
-Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
+                            Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
                             models.
                         </p>
                     </div>

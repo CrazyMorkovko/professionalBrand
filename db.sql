@@ -82,7 +82,7 @@ CREATE TABLE `reviews` (
   `product_id` int(11) NOT NULL,
   `state` tinyint(4) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -94,6 +94,32 @@ LOCK TABLES `reviews` WRITE;
 INSERT INTO `reviews` VALUES (3,'Regina','Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aspernatur delectus, earum eius eos est facere, ipsum iste maxime necessitatibus officiis optio perferendis praesentium, quasi quia quo reiciendis sint.',1,1),(4,'Vadim','Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aspernatur delectus, earum eius eos est facere.',1,1),(11,'Anatoliy','Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aspernatur delectus, earum eius eos est facere, ipsum iste maxime necessitatibus officiis',1,0);
 /*!40000 ALTER TABLE `reviews` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `users`
+--
+
+DROP TABLE IF EXISTS `users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `role` tinyint(4) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users`
+--
+
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -104,4 +130,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-12-14  0:17:10
+-- Dump completed on 2018-12-16 23:27:50
