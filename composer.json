@@ -1,0 +1,13 @@
+{
+    "name": "crazymorkovko/pb",
+    "type": "project",
+    "require": {
+        "filp/whoops": "^2.3"
+    },
+    "authors": [
+        {
+            "name": "CrazyMorkovko",
+            "email": "reginasakhapova@yandex.ru"
+        }
+    ]
+}
