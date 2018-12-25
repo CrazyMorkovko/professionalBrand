@@ -1,4 +1,5 @@
 import {observable, action} from "mobx";
+import axios from "axios";
 
 class ProductStore {
   constructor(rootStore) {
@@ -23,6 +24,13 @@ class ProductStore {
       id : 10,
       name : 'test3'
     })
+  }
+
+  @action
+  loadProducts() {
+    axios.get("/?page=admin/products").then(action((response) => {
+      this.products = response.data;
+    }))
   }
 }
 
