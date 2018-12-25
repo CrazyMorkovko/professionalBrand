@@ -6,3 +6,4 @@ public/scripts/app.js
 public/css/app.css
 mix-manifest.json
 package-lock.json
+.env

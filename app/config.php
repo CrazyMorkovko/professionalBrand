@@ -1,7 +1,7 @@
 <?php
 $config = [
-    'host' => 'localhost',
-    'user' => 'avengerweb',
-    'password' => '123456',
-    'database' => 'professional_brand'
+    'host' => getenv('DB_HOST'),
+    'user' => getenv('DB_USERNAME'),
+    'password' => getenv('DB_PASSWORD'),
+    'database' => getenv('DB_NAME')
 ];

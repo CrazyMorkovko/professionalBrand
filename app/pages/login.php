@@ -1,5 +1,5 @@
 <?php
-shouldBeGuests($USER);
+shouldBeGuests();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = mysqli_real_escape_string($connection, $_POST['email']);
